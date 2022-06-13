@@ -35,7 +35,7 @@ $$
 \end{gather}
 $$
 
-where, from now on, $\mu_i$ is the statistical moment of order $i$ (\mu_i = \int_{\mathcal{X}}x^iw(x)dx), so that $\mu_o = 1$. As said in the previous notebook, when $\mu_1 = 0$, we obtain $\pi_1(x) = x$.
+where, from now on, $\mu_i$ is the statistical moment of order $i$ ($\mu_i = \int_{\mathcal{X}}x^iw(x)dx$), so that $\mu_o = 1$. As said in the previous notebook, when $\mu_1 = 0$, we obtain $\pi_1(x) = x$.
 
 The second polynomial, *i.e.* $\pi_2(x) = c_2^2x^2 + c_2^1x + c_2^0$, will then follow:
 
