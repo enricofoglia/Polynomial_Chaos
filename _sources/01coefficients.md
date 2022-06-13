@@ -51,8 +51,8 @@ The known form for $\pi_1$ we arrive at the following system:
 
 $$
 \begin{gather}
-	\mu_0c_2^0 + \mu_1c_2^1 + \mu_2c_2^2 = 0
-	\mu_1c_2^0 + \mu_2c_2^1 + \mu_3c_2^2 = 0
+	\mu_0c_2^0 + \mu_1c_2^1 + \mu_2c_2^2 = 0\\
+	\mu_1c_2^0 + \mu_2c_2^1 + \mu_3c_2^2 = 0\\
 	c_2^2 = 1
 \end{gather}
 $$
