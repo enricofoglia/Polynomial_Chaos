@@ -110,7 +110,12 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Theory
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    How the coefficients are calculated
@@ -121,6 +126,25 @@ const thebe_selector_output = ".output, .cell_output"
    The alpha matrix: dealing with multivariate polynomials
   </a>
  </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Code
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="03code.html">
+   The code
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Bibliography
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="bibliography.html">
    Bibliography
@@ -333,7 +357,7 @@ The condition of orthogonality is defined as:</p>
 	c_1^1 = 1
 \end{gather}
 \end{split}\]</div>
-<p>where, from now on, <span class="math notranslate nohighlight">\(\mu_i\)</span> is the statistical moment of order <span class="math notranslate nohighlight">\(i\)</span> (\mu_i = \int_{\mathcal{X}}x^iw(x)dx), so that <span class="math notranslate nohighlight">\(\mu_o = 1\)</span>. As said in the previous notebook, when <span class="math notranslate nohighlight">\(\mu_1 = 0\)</span>, we obtain <span class="math notranslate nohighlight">\(\pi_1(x) = x\)</span>.</p>
+<p>where, from now on, <span class="math notranslate nohighlight">\(\mu_i\)</span> is the statistical moment of order <span class="math notranslate nohighlight">\(i\)</span> (<span class="math notranslate nohighlight">\(\mu_i = \int_{\mathcal{X}}x^iw(x)dx\)</span>), so that <span class="math notranslate nohighlight">\(\mu_o = 1\)</span>. As said in the previous notebook, when <span class="math notranslate nohighlight">\(\mu_1 = 0\)</span>, we obtain <span class="math notranslate nohighlight">\(\pi_1(x) = x\)</span>.</p>
 <p>The second polynomial, <em>i.e.</em> <span class="math notranslate nohighlight">\(\pi_2(x) = c_2^2x^2 + c_2^1x + c_2^0\)</span>, will then follow:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
