@@ -332,18 +332,18 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="the-alpha-matrix-dealing-with-multivariate-polynomials">
 <h1>The alpha matrix: dealing with multivariate polynomials<a class="headerlink" href="#the-alpha-matrix-dealing-with-multivariate-polynomials" title="Permalink to this headline">#</a></h1>
 <p>The previous section only deals with single valued random variables. But what happens when the input is multidimensional?</p>
-<p>Let the input be <span class="math notranslate nohighlight">\(X = [x_0, x_1, \dots, x_d]\in\mathcal X ^d\)</span>. Under the assumption that all <span class="math notranslate nohighlight">\(x_i\)</span> are independent, the resulting multivariate polynomial expansion of maximum degree <span class="math notranslate nohighlight">\(M\)</span> is just the multiplication of the single variable ones:</p>
+<p>Let the input be <span class="math notranslate nohighlight">\(X = [x_0, x_1, \dots, x_N]\in\mathcal X ^N\)</span>. Under the assumption that all <span class="math notranslate nohighlight">\(x_i\)</span> are independent, the resulting multivariate polynomial expansion of maximum degree <span class="math notranslate nohighlight">\(d\)</span> is just the multiplication of the single variable ones:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{gather}
 	Y(x) = \sum_i \beta_i\Phi_i(X)\\
-	\Phi_i(X) = \prod_{j= 0}^d \pi_{\alpha^i_j}^j(X)\\
-	\mbox{with: }\sum_{j=0}^d \alpha^i_j \leq M
+	\Phi_i(X) = \prod_{j= 0}^N \pi_{\alpha^i_j}^j(X)\\
+	\mbox{with: }\sum_{j=0}^N \alpha^i_j \leq d
 \end{gather}
 \end{split}\]</div>
-<p>where the index matrix <span class="math notranslate nohighlight">\(\alpha^i_j\)</span> contains all the combinatorial information needed to accurately multiply the right coefficients. It must be noted that now the number of terms in the expansion is increased to <span class="math notranslate nohighlight">\(N = (M+d)!/(M!d!)\)</span> to accomodate for all the possible combinations of order less than <span class="math notranslate nohighlight">\(M\)</span>.</p>
-<p>The matrix can be constructed in the following way. We let every column represent a variable and every row a term in the expansion. In this way the entire matrix will be of dimension <span class="math notranslate nohighlight">\(M\times d\)</span>. Every entry <span class="math notranslate nohighlight">\(\alpha^i_j\)</span> will represent the degree of the polynomial of the variable <span class="math notranslate nohighlight">\(j\)</span> in the term <span class="math notranslate nohighlight">\(i\)</span>. An example will hopefully clarify this idea.</p>
-<p>Let <span class="math notranslate nohighlight">\(X = [x_0, x_1]\)</span> and the maximum degree of the expansion be <span class="math notranslate nohighlight">\(M = 2\)</span>. Let the polynomial of degree <span class="math notranslate nohighlight">\(i\)</span> of the variable <span class="math notranslate nohighlight">\(x_j\)</span> be called <span class="math notranslate nohighlight">\(\pi_j^i\)</span>. This will generate an expansion with <span class="math notranslate nohighlight">\(N = 6\)</span> terms, in the form:</p>
+<p>where the index matrix <span class="math notranslate nohighlight">\(\alpha^i_j\)</span> contains all the combinatorial information needed to accurately multiply the right coefficients. It must be noted that now the number of terms in the expansion is increased to <span class="math notranslate nohighlight">\(M = (N+d)!/(N!d!)\)</span> to accomodate for all the possible combinations of order less than <span class="math notranslate nohighlight">\(d\)</span>.</p>
+<p>The matrix can be constructed in the following way. We let every column represent a variable and every row a term in the expansion. In this way the entire matrix will be of dimension <span class="math notranslate nohighlight">\(d\times N\)</span>. Every entry <span class="math notranslate nohighlight">\(\alpha^i_j\)</span> will represent the degree of the polynomial of the variable <span class="math notranslate nohighlight">\(j\)</span> in the term <span class="math notranslate nohighlight">\(i\)</span>. An example will hopefully clarify this idea.</p>
+<p>Let <span class="math notranslate nohighlight">\(X = [x_0, x_1]\)</span> and the maximum degree of the expansion be <span class="math notranslate nohighlight">\(M = 2\)</span>. Let the polynomial of degree <span class="math notranslate nohighlight">\(i\)</span> of the variable <span class="math notranslate nohighlight">\(x_j\)</span> be called <span class="math notranslate nohighlight">\(\pi_i^j\)</span>. This will generate an expansion with <span class="math notranslate nohighlight">\(M = 6\)</span> terms, in the form:</p>
 <div class="math notranslate nohighlight">
 \[
 	Y(X) = \beta_0\pi_0^0\pi_0^1 + \beta_1\pi_1^0\pi_0^1 + \beta_2\pi_0^0\pi_1^1 + \beta_3\pi_2^0\pi_0^1 + \beta_4\pi_1^0\pi_1^1 + \beta_5\pi_0^0\pi_2^1
