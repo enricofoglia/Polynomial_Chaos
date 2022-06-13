@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Theory
+    chapters:
+    - file: 01coefficients
+    - file: 02indexMatrix
+  - caption: Code
+    chapters:
+    - file: 03code
+  - caption: Bibliography
+    chapters:
+    - file: bibliography
